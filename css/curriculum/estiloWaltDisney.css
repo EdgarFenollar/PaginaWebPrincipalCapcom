@@ -1,0 +1,35 @@
+body{
+    background-color: lightblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenido{
+    width: 30%;
+    text-align: center;
+    background-color:aliceblue;
+    border: 4px solid salmon;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.academico{
+    width: 200px;
+    background-color:aliceblue;
+    border: 4px solid salmon;
+    border-radius: 8px;
+}
+
+.profesional{
+    padding: 10px;
+    background-color:aliceblue;
+    border: 4px solid salmon;
+    border-radius: 8px;
+}
+

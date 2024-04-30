@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Control de animación para cambio de pantalla*/
+html{
+    scroll-snap-type: y mandatory;
+}
+
+section{  
+    block-size: 100vh;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+/*Ajuste básico para el body*/
+body {
+    background-color: lightblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Posicionamiento del titulo*/
+.titulo{
+    position: absolute;
+    border: solid 5px black;
+    background-color: lightblue;
+    padding: 10px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Posicionamiento del background*/
+.background{
+    background-color: lightblue;
+    background-image: url(../../img/dialogo/irongiant/background01.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Posicionamiento del contenido verticalmente*/
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Creacion del contenedor para usar el display flex*/
+.container {
+    margin-top: -450px;
+    max-width: auto;
+    height: 450px;/*Nuevo*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .speechb11{
+    max-width: 200px;
+    background:  #f5ac0e;
+    padding: 10px;
+    -moz-border-radius: 42px;
+    -webkit-border-radius: 42px;
+    border-radius: 42px;
+    z-index: 2;
+}
+
+.speechb11::after {
+    content: "";
+    border: 17px solid transparent;
+    position: absolute;
+  }
+
+  .left.speechb11::after {
+    border-right-color: #f5ac0e;
+    border-left: 0;
+    margin-left: -160px;
+  }
+
+  .speechb22{
+    max-width: 15em;
+    background: rgb(93, 210, 240);
+    padding: 15px;
+    z-index: 2;
+}
+
+.speechb22::after {
+    content: "";
+    border: 20px solid transparent;
+    position: absolute;
+  }
+
+.right.speechb22::after {
+    border-left-color:  rgb(93, 210, 240);
+    border-right: 0;
+    margin-right: -75px;
+  }
+
+  /*Si la pantalla es mas de 45 rem todas las clases que esten dentro cambiara se aspecto*/
+@media (min-width: 45rem){
+    /*Contenedor para el contenido relacionado con Hogwarth*/
+    .containerH{
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    /*Contenedor para el contenido relacionado con el Iron Giant*/
+    .containerI{
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    /*Imagen de hogwarth*/
+    .hogwarth1{
+        background-image: url(../../img/dialogo/irongiant/Hogwarth.jpg);
+        height: 200px;
+        width: 200px;
+        background-size: cover;
+        background-position: center;
+        border: solid 10px black;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    /*Imagen  del Iron Giant*/
+    .iron1{
+        background-image: url(../../img/dialogo/irongiant/IronGiant.jpg);
+        height: 200px;
+        width: 200px;
+        background-size: cover;
+        background-position: center;
+        border: solid 10px black;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    /*Bocadillo de Hogwarth*/
+    .speechb1{
+        max-width: 15em;
+        background: #f5ac0e;
+        padding: 15px;
+        -moz-border-radius: 42px;
+        -webkit-border-radius: 42px;
+        border-radius: 42px;
+        z-index: 2;
+    }
+    
+    .speechb1::after {
+        content: "";
+        border: 20px solid transparent;
+        position: absolute;
+      }
+    
+    .left.speechb1::after {
+        border-right-color: #f5ac0e;
+        border-left: 0;
+        margin-left: -288px;
+      }
+    /*Bocadillo del Iron Giant*/
+    .speechb2{
+        max-width: 15em;
+        background: rgb(93, 210, 240);
+        padding: 15px;
+        z-index: 2;
+    }
+
+    .speechb2::after {
+        content: "";
+        border: 20px solid transparent;
+        position: absolute;
+      }
+
+    .right.speechb2::after {
+        border-left-color:  rgb(93, 210, 240);
+        border-right: 0;
+        margin-right: -130px;
+      }
+
+      footer{
+        position: absolute;
+        border: solid 5px black;
+        background-color: lightblue;
+        padding: 10px;
+        top: 5500px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+}
+/*Si la pantalla es menos de 45 rem todas las clases que esten dentro cambiara se aspecto*/
+@media (max-width: 52rem){
+    .containerH{
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerI{
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hogwarth1{
+        background-image: url(../../img/dialogo/irongiant/Hogwarth.jpg);
+        position:relative;
+        height: 100px;
+        width: 100px;
+        background-size: cover;
+        background-position: center;
+        border: solid 10px black;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .iron1{
+        background-image: url(../../img/dialogo/irongiant/IronGiant.jpg);
+        height: 100px;
+        width: 100px;
+        background-size: cover;
+        background-position: center;
+        border: solid 10px black;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .speechb1{
+        font-size: 10px;
+        max-width: 15em;
+        background: #f5ac0e;
+        padding: 15px;
+        -moz-border-radius: 42px;
+        -webkit-border-radius: 42px;
+        border-radius: 42px;
+        z-index: 2;
+    }
+    
+    .speechb1::after {
+        content: "";
+        border: 20px solid transparent;
+        position: absolute;
+      }
+    
+      .left.speechb1::after {
+        border-right-color: #f5ac0e;
+        border-left: 0;
+        margin-left: -190px;
+      }
+
+    .speechb2{
+        max-width: 15em;
+        background: rgb(93, 210, 240);
+        padding: 15px;
+        z-index: 2;
+    }
+
+    .speechb2::after {
+
+        content: "";
+        border: 20px solid transparent;
+        position: absolute;
+      }
+
+    .right.speechb2::after {
+        border-left-color:  rgb(93, 210, 240);
+        border-right: 0;
+        margin-right: -120px;
+      }
+
+}
