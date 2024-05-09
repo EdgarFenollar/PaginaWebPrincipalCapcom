@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -124,4 +125,28 @@ section p{
     height: 1%;
     position: absolute;
     right: 9%;
+}
+
+/*Fuentes*/
+@font-face{
+    font-family: Principal1;
+    src: url(../../font/dialogo/FuentesGimnasio/gymkhana-bk.otf);
+
+}
+
+
+@font-face{
+    font-family: Principal2;
+    src: url(../../font/dialogo/FuentesGimnasio/gymnastik\ DEMO.otf);
+
+}
+
+
+.bocadillo1 p{
+    font-family: Principal1;
+}
+
+
+.bocadillo2 p{
+    font-family: Principal2;
 }

@@ -1,12 +1,12 @@
 body {
-    width: auto;/*auto se redimensiona por completo al hacer zoom*/
-    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    background-color:rgb(22, 52, 116);
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
 }
+
 header {
     text-align: center;
     background-color: rgba(46, 53, 70, 0.126);
@@ -24,9 +24,9 @@ header h2 {
 
 
 .containerGeneral{
+    padding-top: 135px;
     max-width:80%;
     margin: 0 auto;
-    padding: 20px;
     background-color: #fff; /* Color de fondo del contenedor */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
@@ -111,15 +111,3 @@ header h2 {
     
 }
 
-footer {
-    text-align: center;
-    background-color: rgba(46, 53, 70, 0.126);
-    color: red;
-    padding: 10px; /* Agregamos un poco de espacio alrededor del texto en el pie de página */
-}
-
-/* Estilo para el texto de derechos de autor en el footer */
-footer p {
-    margin: 0; /* Elimina el espacio entre el texto y el borde del footer */
-    font-size: 14px; /* Tamaño de fuente adecuado */
-}

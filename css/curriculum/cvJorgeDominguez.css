@@ -1,22 +1,35 @@
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
-    background-color: rgba(5, 5, 255, 0.582); /* Color de fondo */
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
 }
 
+/*
+*{
+    border: solid 2px red;
+}
+*/
+
+
 .container {
+    padding-top: 160px;
+    padding-left: 30px;
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
     background-color: #fff; /* Color de fondo del contenedor */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
 
 .header {
-    text-align: center;
-    margin-bottom: 20px;
     display: flex; /* Utilizamos Flexbox para el diseño */
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 20px;
     align-items: center; /* Alinea verticalmente los elementos al centro */
 }
 
@@ -36,7 +49,6 @@ img.logo {
 img.bio {
     display: flex;
     justify-content: center;
-   
     max-width: 250px;
     margin-right: auto; /*Estos dos son para centrar la imagen*/
     margin-left: auto;
@@ -73,3 +85,5 @@ img.edu-logo {
 }
 
 
+
+/* FOOTER */

@@ -1,7 +1,7 @@
 body{
     width: 100%;
     background: rgb(2, 2, 2);
-    background-image: url("../../img/comparativa/mainBG.jpg");
+    background-image: url("../../img/comparativa/comparativaJuegosMesaMisterio/mainBG.jpg");
     background-attachment: fixed;
 }
 
@@ -130,7 +130,7 @@ img{
 }
 
 .datos{
-    background-image: url("../../img/comparativa/contentBG.jpg");
+    background-image: url("../../img/comparativa/comparativaJuegosMesaMisterio/contentBG.jpg");
     width: 400px;
     height: 500px;
     border-radius: 0 0 1em 1em;

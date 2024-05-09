@@ -1,3 +1,12 @@
+@font-face {
+    font-family: ironGiant;
+    src: url(../../font/dialogo/Robot-Regular.ttf);
+}
+@font-face {
+    font-family: hogwarth;
+    src: url(../../font/dialogo/ButterCookie-Regular.otf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +17,9 @@ html{
     scroll-snap-type: y mandatory;
 }
 
-section{  
+
+
+article{  
     block-size: 100vh;
     scroll-snap-align: center;
     scroll-snap-stop: always;
@@ -18,6 +29,68 @@ section{
 body {
     background-color: lightblue;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo{
+    float: left;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+}
+
+#nav-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  margin: auto;
+  padding: .3em 0;
+  background-color: #ffffff;
+  z-index: 10000;
+}
+
+#nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 1em;
+    position: relative;
+}
+
+#nav-bar ul li a{
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+#nav-bar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: rgb(226, 43, 43);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+#nav-bar ul li:hover::after{
+    width: 100%;
+}
+
+.dropdown-menu{
+  display: none;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
 }
 
 /*Posicionamiento del titulo*/
@@ -61,6 +134,8 @@ body {
 }
 
   .speechb11{
+    font-family: hogwarth;
+    font-size: larger;
     max-width: 200px;
     background:  #f5ac0e;
     padding: 10px;
@@ -79,10 +154,12 @@ body {
   .left.speechb11::after {
     border-right-color: #f5ac0e;
     border-left: 0;
-    margin-left: -160px;
+    margin-left: -178px;
   }
 
   .speechb22{
+    font-family: ironGiant;
+    font-size: larger;
     max-width: 15em;
     background: rgb(93, 210, 240);
     padding: 15px;
@@ -143,6 +220,8 @@ body {
     }
     /*Bocadillo de Hogwarth*/
     .speechb1{
+        font-family: hogwarth;
+        font-size: larger;
         max-width: 15em;
         background: #f5ac0e;
         padding: 15px;
@@ -161,10 +240,12 @@ body {
     .left.speechb1::after {
         border-right-color: #f5ac0e;
         border-left: 0;
-        margin-left: -288px;
+        margin-left: -333px;
       }
     /*Bocadillo del Iron Giant*/
     .speechb2{
+        font-family: ironGiant;
+        font-size: larger;
         max-width: 15em;
         background: rgb(93, 210, 240);
         padding: 15px;
@@ -180,7 +261,7 @@ body {
     .right.speechb2::after {
         border-left-color:  rgb(93, 210, 240);
         border-right: 0;
-        margin-right: -130px;
+        margin-right: -123px;
       }
 
       footer{
@@ -235,6 +316,8 @@ body {
     }
 
     .speechb1{
+        font-family: hogwarth;
+        font-size: larger;
         font-size: 10px;
         max-width: 15em;
         background: #f5ac0e;
@@ -258,6 +341,7 @@ body {
       }
 
     .speechb2{
+        font-family: ironGiant;
         max-width: 15em;
         background: rgb(93, 210, 240);
         padding: 15px;
@@ -276,5 +360,60 @@ body {
         border-right: 0;
         margin-right: -120px;
       }
+
+}
+
+@media (max-width: 882px)  
+{
+
+  .aside{
+    display: none;
+  }
+  #nav-bar{
+    display: none;
+  }
+  
+  .dropdown-menu{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    margin: auto;
+    padding: .3em 0;
+    background-color: #ffffff;
+    z-index: 10000;
+  }
+
+  .dropdown-menu button{
+    background-color:#fff;
+    color: #000000;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown-menu a{
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+
+  .dropdown-menu .menu-contenido{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px black;
+  }
+
+
+  .dropdown-menu button:hover .menu-contenido{
+  display: block;
+  }
+
+  .dropdown-menu a:hover{
+    background-color: gray;
+  }
 
 }

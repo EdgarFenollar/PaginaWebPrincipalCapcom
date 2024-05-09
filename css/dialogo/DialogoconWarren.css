@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'Glass Antiqua';
+    src: url(../../font/dialogo/DialogoconWarren/GlassAntiqua-Regular.ttf)
+}
+
+@font-face{
+    font-family: 'Caveat';
+    src: url(../../font/dialogo/DialogoconWarren/Caveat-SemiBold.ttf);
+    font-weight: bold;
+    font-size: bold;
+
+}
+
 *{
     box-sizing: border-box;
 }
@@ -8,10 +21,13 @@ h1{
     font-size: 40px;
 }
 
-
+main{
+    width: 100vw;
+    height: 150vh;
+}
 .container{
-    width:100vw;
-    height: 100vh;
+    width:100%;
+    height: 95%;
     padding:10px;
 
 }
@@ -38,7 +54,8 @@ img{
     border-radius: 5px;
     background: rgb(78, 169, 255);
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Glass Antiqua', Times, serif;
+    font-size: 1.2em;
     z-index: 1;
     position: relative;
     max-width: 75%;
@@ -72,7 +89,8 @@ img{
     border-radius: 5px;
         background: silver;
         color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Caveat', Times, serif;
+    font-size: 1.4em;
     z-index: 1;
     position: relative;
     max-width: 75%;
@@ -125,7 +143,8 @@ img{
         border-radius: 5px;
         background: rgb(78, 169, 255);
         color: black;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Glass Antiqua', Times, serif;
+        font-size: 1em;
         z-index: 1;
         position: relative;
         max-width: 55%;
@@ -156,9 +175,10 @@ img{
     }
     .bocadilloWarren{
         border-radius: 5px;
-            background: silver;
-            color: black;
-        font-family: 'Times New Roman', Times, serif;
+        background: silver;
+        color: black;
+        font-family: 'Caveat', Times, serif;
+        font-size: 1.1em;
         z-index: 1;
         position: relative;
         max-width: 55%;

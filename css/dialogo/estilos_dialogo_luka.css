@@ -75,7 +75,8 @@
 
     /*Asigna los valores al cuerpo de la página*/
     body{
-        background-color: rgb(230, 230, 230); /*Se asigna el color de fondo*/
+        background-color: rgb(0, 0, 0); /*Se asigna el color de fondo*/
+        min-width: 800px;
     }
 
     /*Asigna los valores al pie de página*/
@@ -223,7 +224,7 @@
     }
     }
 
-    /*Se asignan los valores al id luka que hace referencia a ka i*/
+    /*Se asignan los valores al id luka que hace referencia a la img*/
     #luka{
         border-radius: 50%; /*Redondea las esquinas en un 50%*/
         width: 20%; /*Asigna un ancho de un 20%*/
@@ -237,7 +238,24 @@
     }
 
     /*Se asignan los valores a la clase .texto que incluyen los textos tanto de preguntas*/
-    .texto{
+    .textoPregunta{
+        font-family: fuente1;
         text-align: center; /*Alinea el texto al centro*/
         color: rgb(255, 255, 255); /*Asigna el color del texto*/
+    }
+
+    .textoRespuesta{
+        font-family: fuente2;
+        text-align: center; /*Alinea el texto al centro*/
+        color: rgb(255, 255, 255); /*Asigna el color del texto*/
+    }
+
+    @font-face {
+        font-family: fuente1;
+        src: url(../../font/dialogo/Beyonders.ttf);
+    }
+    
+    @font-face {
+        font-family: fuente2;
+        src: url(../../font/dialogo/varsity_regular.ttf);
     }

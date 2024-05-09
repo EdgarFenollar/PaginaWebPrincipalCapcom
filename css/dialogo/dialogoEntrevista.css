@@ -1,3 +1,14 @@
+@import url(../../font/fuentes/PirataOne-Regular.ttf);
+@import url(../../font/fuentes/GABRWFFR.TTF);
+@font-face {
+    font-family: "fuente1";
+    src: url(../../font/fuentes/GABRWFFR.TTF);
+}
+@font-face {
+    font-family: "fuente2";
+    src: url(../../font/fuentes/PirataOne-Regular.ttf);
+}
+
 h1 {
     font-family: "Gill Sans MT";
     color: white;
@@ -57,7 +68,7 @@ body {
 }
 
 .entrevistador {
-    font-family: "Gill Sans MT";
+    font-family: fuente1;
     background-color: transparent;
     float: left;
     width: 50%;
@@ -65,7 +76,8 @@ body {
 }
 
 .antoine {
-    font-family: "Gill Sans MT";
+    font-family: fuente2;
+    font-size: 22px;
     background-color: transparent;
     float: right;
     width: 50%;

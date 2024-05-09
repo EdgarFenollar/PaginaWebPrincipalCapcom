@@ -14,7 +14,7 @@ label{
   filter: invert(1);
 }
 
-.form-box {
+.formulario {
   position: relative;
   width: 25%;
   padding: 40px;
@@ -39,11 +39,11 @@ h2 {
   text-align: center;
 }
 
-.user-box {
+.input {
   position: relative;
 }
 
-.user-box input {
+.input input {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -55,7 +55,7 @@ h2 {
   background: transparent;
 }
 
-.user-box label {
+.input label {
   position: absolute;
   top:0;
   left: 0;
@@ -66,8 +66,8 @@ h2 {
   transition: .5s;
 }
 
-.user-box input:focus ~ label,
-.user-box input:valid ~ label {
+.input input:focus ~ label,
+.input input:valid ~ label {
   top: -20px;
   left: 0;
   color: #f68e44;

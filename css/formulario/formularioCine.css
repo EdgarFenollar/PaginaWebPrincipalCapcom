@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url(../../img/formulario/formulario//3a02037aa20214adb873b52e27a143f8.jpg);
+    background-image: url("../../img/formulario/formulario/3a02037aa20214adb873b52e27a143f8.jpg");
     background-size: cover;
     border-image: auto;
 }
@@ -18,7 +18,7 @@ body {
     margin-right: 150px;
     margin-left: 150px;
     box-shadow: rgba(255, 255, 255, 0.56) 0px 10px 20px 4px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .h1{
@@ -45,6 +45,14 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.texto{
+    margin-left: 5%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-top: -4.5%;
 }
 
 .pelicula{
@@ -87,5 +95,16 @@ body {
     margin-left: 5px;
 }
 
+#aceptar-privacidad{
+    margin-left:-200px;
+    margin-top: 3%;
+}
 
+#aceptar-cookies{
+    margin-left:-200px;
+    
+}
 
+.boton{
+    margin-top: 10px;
+}

@@ -1,4 +1,15 @@
+@font-face {
+    font-family: Dialogo;
+    src: url("../../font/dialogo/DialogoMTG/Enchanted\ Land.otf");
+}
+
+@font-face {
+    font-family: DialogoDerecha;
+    src: url("../../font/dialogo/DialogoMTG/Planewalker-38m6.ttf");
+}
+
 .bocadillo {
+    font-family: Dialogo;
     margin-left: 3%;
     position: relative;
     width: 40%;
@@ -23,6 +34,7 @@
 }
 
 .bocadillo_right {
+    font-family: DialogoDerecha;
     margin-left: 55%;
     position: relative;
     width: 40%;
@@ -62,20 +74,14 @@ h1{
     text-shadow: white 2px 1px 1px ;
 }
 
-@font-face {
-    font-family: TextoFuente;
-    src: url(../../font/dialogo/DialogoMTG/Merriweather/Merriweather-Regular.ttf);
-}
-
 
 p{
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select:none;
     user-select:none;
-    font-family: TextoFuente;
 }
 
 img{
