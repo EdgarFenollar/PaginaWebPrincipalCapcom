@@ -474,5 +474,60 @@ footer {
 
 /*{
     border: red solid;
+}*/
+
+/*.cookies{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background: transparent;
+    backdrop-filter:blur(30px);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3%;
 }
 
+.aceptar{
+    background-color: #e74c3c;
+}*/
+
+.cookies{
+    width: 100%;
+    bottom: 300px;
+    left: -20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgb(211, 245, 19), rgba(20, 241, 248, 0.8));
+    backdrop-filter: blur(30px);
+    padding: 3%;
+    border: 3px solid black;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.tituloCookie{
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.aceptar, .rechazar{
+    margin: 5px;
+    transition: .3s;
+}
+
+.aceptar:hover{
+    transform:  scale(1.2);
+    background-color: #ebc025;
+}
+
+.rechazar:hover{
+    transform:  scale(1.2);
+    background-color: #ebc025;
+}
